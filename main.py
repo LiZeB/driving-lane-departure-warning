@@ -1,9 +1,5 @@
 """Departure Warning System with a Monocular Camera"""
 
-__author__ = "Junsheng Fu"
-__email__ = "junsheng.fu@yahoo.com"
-__date__ = "March 2017"
-
 
 from lane import *
 from moviepy.editor import VideoFileClip
@@ -13,7 +9,7 @@ if __name__ == "__main__":
 
     demo = 1 # 1: image, 2 video
 
-    if demo == 1:
+    if demo == 2:
         imagepath = 'examples/test3.jpg'
         img = cv2.imread(imagepath)
         img_aug = process_frame(img)
